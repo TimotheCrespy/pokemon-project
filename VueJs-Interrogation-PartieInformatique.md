@@ -45,6 +45,7 @@ Créer 3 nouveaux composant dont l'élément racine est une `<section>` :
 - `FullListTab.vue`
 - `ClassicSearchTab.vue`
 - `EvolutionSearch.vue`
+
 Ces 3 composants importent, mettent à disposition et utilisent chacun le composant `Title.vue` , avec pour texte respectivement :
 - Liste complète
 - Recherche classique
@@ -77,8 +78,6 @@ data() {
 ```
 
 Concernant la partie `<template>`, s'inspirer de : https://codesandbox.io/s/github/vuejs/vuejs.org/tree/master/src/v2/examples/vue-20-dynamic-components-with-binding?file=/index.html
-
-Penser à importer les 3 composants dans la vue `App.vue` afin de pouvoir les utiliser dans `data`.
 
 ### Onglet liste complète
 
@@ -122,9 +121,9 @@ Dans le composant `ClassicSearchTab.vue`, créer un formulaire simple comportant
 
 Lier le contenu du champ textuel à une variable du state nommée `pokename`.
 
-Faire en sorte que la phrase suivante s'affiche lors du clic sur « Rechercher » : « La recherche est effectuée pour : [pokename] » (en remplaçant [pokename] par le texte entré dans le champ textuel). Si le contenu du champ textuel est vide, afficher : « Veuillez renseigner un nom de pokémon. ».
+Faire en sorte que la phrase suivante s'affiche lors du clic sur « Rechercher » : « La recherche est effectuée pour : [pokename] » (en remplaçant [pokename] par le texte entré dans le champ textuel). Si le contenu du champ textuel est vide ou composé uniquement d'espaces, afficher : « Veuillez renseigner un nom de pokémon. ».
 
-Compléter le composant pour lancer la recherche lorsque le formulaire est validé. Pour cela, déterminer l'URL auprès de API PokéApi (https://pokeapi.co/), qui devra bien sûr comporter le contenu du champ textuel.
+Compléter le composant pour lancer la recherche lorsque le formulaire est validé (pa un clic sur « Rechercher »). Pour cela, déterminer l'URL auprès de API PokéApi (https://pokeapi.co/), qui devra bien sûr comporter le contenu du champ textuel.
 
 Si le retour de l'API est en erreur, i.e. si le pokémon semble ne pas exister, afficher la phrase : « Le pokémon n'a pas été trouvée... ».
 
@@ -161,7 +160,7 @@ Afficher les informations suivantes :
 
 ### Onglet recherche des évolutions
 
-> Cette partie est en bonus. Il est inutile de l'entamer si le reste n'est pas complètement opérationnel.
+> Cette partie est en bonus. Il est inutile de l'entamer si le reste n'est pas complètement opérationnel et bien implémenté.
 
 Proposer pour cet onglet lié au composant `EvolutionSearchTab.vue` une recherche identique à celle de `ClassicSearchTab.vue`, mais présantant les noms des pokémons de la même famille d'évolution de celui recherché. Par exemple, si la recherche est « Abra », afficher « Abra > Kadabra > Alakazam » ; si la recherche est « Pinsir », afficher « Pinsir n'a pas dévolution » ; si la recherche est « Jigglypuff », afficher « Igglybuff > Jigglypuff > Wigglytuff ».
 
@@ -171,4 +170,4 @@ Prendre en compte le fait qu'il faut effectuer deux appels API l'un après l'aut
 
 ### Rendu
 
-Zipper le projet `pokemon-project` pour créer le fichier `[prenom]-[nom].zip`. L'envoyer d'une part à l'adresse `timothe.crespy@lyon.ort.asso.fr`, et d'autre part à `Timothé Crespy` en message privé sur Microsoft Teams, avant 12h10.
+Zipper le projet `pokemon-project` pour créer le fichier `[prenom]-[nom].zip`. L'envoyer d'une part à l'adresse `timothe.crespy@lyon.ort.asso.fr`, et d'autre part à `Timothé Crespy` en message privé sur Microsoft Teams, avant 12h05.
