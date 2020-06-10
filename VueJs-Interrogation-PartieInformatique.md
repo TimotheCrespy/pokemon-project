@@ -41,10 +41,10 @@ color: #1d9099;
 text-shadow: 4px 4px 0 #e79c10, -4px -4px 0 #d53a33;
 ```
 
-Créer 3 nouveaux composant dont l'élément racine est une `<section>` :
+Créer 3 nouveaux composants dont l'élément racine est une `<section>` :
 - `FullListTab.vue`
 - `ClassicSearchTab.vue`
-- `EvolutionSearch.vue`
+- `EvolutionSearchTab.vue`
 
 Ces 3 composants importent, mettent à disposition et utilisent chacun le composant `Title.vue` , avec pour texte respectivement :
 - Liste complète
