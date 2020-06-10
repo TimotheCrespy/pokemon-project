@@ -4,7 +4,7 @@
 
 ### Mise en place
 
-Récupérer le projet `pokemon-projet` disponible à cette URL : https://github.com/TimotheCrespy/pokemon-project
+Récupérer le projet `pokemon-project` disponible à cette URL : https://github.com/TimotheCrespy/pokemon-project
 
 Installer toutes les dépendances requises dans le `package.json`.
 
